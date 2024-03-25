@@ -1,0 +1,21 @@
+<mat-card class="player-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{player?.name}}</mat-card-title>
+    <mat-card-subtitle>
+      {{player?.position}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image ngSrc="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="{{player?.name}}" fill>
+  <mat-card-content>
+    <div class="player-stats">
+      <div class="basic-stats">
+        <div class="height">{{player?.height}}</div>
+        <div class="weight">{{player?.weight}}</div>
+      </div>
+    </div>
+    <div class="player-bio">
+      {{player?.bio}}
+    </div>
+  </mat-card-content>
+</mat-card>

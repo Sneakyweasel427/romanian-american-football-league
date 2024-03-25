@@ -1,0 +1,16 @@
+<h4>Offense</h4>
+@for (player of players | team:'offense'; track $index) {
+  @if (player.team === 'offense') {
+    <div class="player-grid offense">
+      <app-player-card [player]="player" (click)="goToPlayerPage(player)"></app-player-card>
+    </div>
+  }
+}
+<h4>Defense</h4>
+@for (player of players | team:'defense'; track $index) {
+  @if (player.team === 'defense') {
+    <div class="player-grid defense">
+      <app-player-card [player]="player" (click)="goToPlayerPage(player)"></app-player-card>
+    </div>
+  }
+}
